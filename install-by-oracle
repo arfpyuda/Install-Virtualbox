@@ -1,0 +1,28 @@
+install virtual box melalui cara yang ada di dalam website oracle.
+============================================================================================================================
+    
+    Debian-based Linux distributions
+    
+     Add the following line to your /etc/apt/sources.list.
+     According to your distribution, replace '<mydist>' with
+     'eoan', 'bionic', 'xenial', 'buster', 'stretch', or 'jessie'
+     (older versions of VirtualBox supported different distributions):
+     
+     1. cd /etc/apt/sources.list
+        copy in (sources.list) -> deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian <mydist> contrib
+        in case im use 'buster dist' after done you copy and save next (exit cd)
+     
+     2. install dkms if not yet : sudo apt-get install dkms
+     
+     3. wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+     
+     4. sudo apt-get update
+     
+     5. sudo apt-get install virtualbox virtualbox-ext-pack
+     
+     6. Done
+     
+     =========================================================================================================================
+     
+     https://www.youtube.com/watch?v=xMcS0V1kj5M
+     https://www.virtualbox.org/wiki/Linux_Downloads
